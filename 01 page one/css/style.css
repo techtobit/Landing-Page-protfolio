@@ -36,7 +36,7 @@
  --font-medium: 500;
  --font-semi-bold: 600;
 
- /*========== Margenes Bottom ==========*/
+ /*========== Margin Bottom ==========*/
  /* .25rem = 4px, .5rem = 8px, .75rem = 12px ... */
 
  --mb-0-25: .25rem;
@@ -256,7 +256,7 @@ img {
 }
 
 .home_content {
- grid-template-columns: 5fr, 3fr;
+ grid-template-columns: 5fr, 5fr;
  padding-top: 3.5rem;
  align-items: center;
 }
@@ -507,7 +507,7 @@ img {
  margin-bottom: var(--mb-2-5);
 }
 
-.skills_open .skills_arrow{
+.skills_open .skills_arrow {
  transform: rotate(180deg);
 }
 

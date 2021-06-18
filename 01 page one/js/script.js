@@ -5,11 +5,21 @@ const navMenu = document.getElementById("nav-menu"),
 
 /*===== MENU SHOW =====*/
 /* Validate if constant exists */
-if (navToggle) {
- navToggle.addEventListener("click",() => {
-  navMenu.classList.add("show-menu");
- }) 
+// if (navToggle) {
+//  navToggle.addEventListener("click",() => {
+//   navMenu.classList.add("show-menu")
+//  }) 
+//  }
+
+
+// ES 6
+ function navToggles() {
+  navToggle.addEventListener("click",()=>{
+   navMenu.classList.add("show-menu")
+  })
  }
+
+ navToggles();
 
  /*===== MENU HIDDEN =====*/
 /* Validate if constant exists */
@@ -33,9 +43,25 @@ navLink.forEach(n => n.addEventListener("click",linkAction));
 
 /*==================== ACCORDION SKILLS ====================*/
 
-co
+const skillsContent = document.getElementsByClassName("skills_content"),
+      skillsHeader = document.querySelectorAll(".skills_header");
 
-/*==================== QUALIFICATION TABS ====================*/
+function toggleSkills() {
+ let itemClass = this.parentNode.getElementByClassName
+
+ for (i =0; i < skillsContent.lenght ; i++){
+  skillsContent[1].className = "skills_content skills_close"
+ }
+
+ if (itemClass == "skills_content skills_close") {
+  this.parentNode.classList = "skills_content skills_open"
+ }
+}
+
+skillsHeader.forEach((el) =>{
+ el.addEventListener("click",toggleSkills)
+})
+// ==================== QUALIFICATION TABS ====================
 
 
 /*==================== SERVICES MODAL ====================*/
@@ -56,4 +82,4 @@ co
 /*==================== SHOW SCROLL UP ====================*/ 
 
 
-/*==================== DARK LIGHT THEME ====================*/ 
+// =================== DARK LIGHT THEME ====================
